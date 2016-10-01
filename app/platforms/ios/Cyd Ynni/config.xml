@@ -23,7 +23,8 @@
         Apache Cordova Team
     </author>
     <content src="index.html" />
-    <access origin="*" />
+    <access origin="http://lab.megni.co.uk/cydynni/*" />
+    <allow-navigation href="http://lab.megni.co.uk/*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
