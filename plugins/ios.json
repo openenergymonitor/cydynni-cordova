@@ -9,6 +9,9 @@
     "installed_plugins": {
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "org.openenergymonitor.cydynni"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "org.openenergymonitor.cydynni"
         }
     },
     "dependent_plugins": {}
