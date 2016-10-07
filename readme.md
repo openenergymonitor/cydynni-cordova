@@ -3,9 +3,9 @@
 
 Cordova build files for [Cyd Ynni web application](https://github.com/trystanlea/cydynni).
 
-### Instructions
+Thanks to @davehun
 
-### Install
+### Install Cordova
 
 `sudo npm install cordova -g`
 
@@ -46,6 +46,8 @@ Where android.jks is our signing key
 `$ANDROID_HOME/build-tools/23.0.3/./zipalign -v 4 platforms/android/build/outputs/apk/android-release-unsigned.apk platforms/android/build/outputs/apk/android-release-signed-aligned.apk`
 
 APK is now ready to publish :-)
+
+***
 
 ## Licence
 
