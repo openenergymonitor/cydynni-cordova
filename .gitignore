@@ -1,1 +1,10 @@
 settings.php
+
+# Mac
+.DS_Store
+
+# cordova
+platforms/*/
+
+# res
+resources/signing
