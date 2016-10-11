@@ -25,10 +25,6 @@ script:
   - cordova prepare
   - cordova build android
 
-release:
-  - exit 0
-
-
 language: objective-c
 os: osx
 osx_image: xcode8
@@ -42,4 +38,4 @@ before_script:
 
 script:
   - cordova prepare
-  - cordova build android
+  - cordova build ios
