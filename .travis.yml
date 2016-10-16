@@ -15,6 +15,7 @@ branches:
 before_install:
   - npm cache clean
   - npm install -g cordova
+  - cordova plugins add cordova-plugin-statusbar
   - echo y | android update sdk -u --filter android-23,android-24
 
 before_script:
