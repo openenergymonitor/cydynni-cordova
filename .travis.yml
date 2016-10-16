@@ -24,3 +24,7 @@ before_script:
 script:
   - cordova prepare
   - cordova build android
+  - cordova build ios
+language: objective-c
+  os: osx
+  osx_image: xcode8
