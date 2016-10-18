@@ -1,6 +1,9 @@
 
 ## Cyd Ynni Mobile App Cordova Build
 
+
+[![Build Status](https://travis-ci.org/openenergymonitor/cydynni-cordova.svg?branch=master)](https://travis-ci.org/openenergymonitor/cydynni-cordova)
+
 Cordova build files for [Cyd Ynni web application](https://github.com/trystanlea/cydynni).
 
 Thanks to @davehun
