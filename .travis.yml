@@ -1,38 +1,44 @@
-
 node_js:
-  - 5.5
-
+- 5.5
 notifications:
   email: true
-
 sudo: false
-
 branches:
   only:
   - master
-
 before_install:
-  - wget http://dl.google.com/android/android-sdk_r24.4.1-macosx.zip
-  - unzip android-sdk_r24.4.1-macosx.zip
-  - export ANDROID_HOME=$PWD/android-sdk-macosx
-  - export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
-  - echo yes | android update sdk --filter platform-tools --no-ui --force > /dev/null
-  - echo yes | android update sdk --filter android-23 --no-ui --force > /dev/null
-  - echo yes | android update sdk --filter build-tools-23.0.3 --all --no-ui --force > /dev/null
-  - echo yes | android update sdk --filter sysimg-23 --no-ui --force > /dev/null
-  - echo yes | android update sdk --filter extra-android-support --no-ui --force > /dev/null
-  - echo yes | android update sdk --filter extra-android-m2repository --no-ui --force > /dev/null
-  - npm cache clean
-  - npm install -g cordova
-  - cordova plugins add cordova-plugin-statusbar
-  - echo y | android update sdk -u --filter android-23,android-24
-
+- wget http://dl.google.com/android/android-sdk_r24.4.1-macosx.zip
+- unzip android-sdk_r24.4.1-macosx.zip
+- export ANDROID_HOME=$PWD/android-sdk-macosx
+- export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
+- echo yes | android update sdk --filter platform-tools --no-ui --force > /dev/null
+- echo yes | android update sdk --filter android-23 --no-ui --force > /dev/null
+- echo yes | android update sdk --filter build-tools-23.0.3 --all --no-ui --force
+  > /dev/null
+- echo yes | android update sdk --filter sysimg-23 --no-ui --force > /dev/null
+- echo yes | android update sdk --filter extra-android-support --no-ui --force > /dev/null
+- echo yes | android update sdk --filter extra-android-m2repository --no-ui --force
+  > /dev/null
+- npm cache clean
+- npm install -g cordova
+- cordova plugins add cordova-plugin-statusbar
+- echo y | android update sdk -u --filter android-23,android-24
 before_script:
-  - rm -rf platforms
-
+- rm -rf platforms
 script:
-  - cordova prepare
-  - cordova build android
-  - cordova build ios
-
+- cordova prepare
+- cordova build android
+- cordova build ios
 language: objective-c
+
+deploy:
+  provider: releases
+  api_key:
+    secure: BO3M3Nh+dK25oDMW3UuSZ+PRPD7bgbCJxQuzMeAFUk+aWNWbPHuE6n+pCPiooyZh8s+iPVNQfTpt/pyTJj6/nrYlx2YhC18qAqBIAkHWoNMC7Sr/bFgMRBT4U2rpgllqS7y86dGa03848RweBtimaOqkKq5b9MjimJ4DblBb9hd3//sg7TdGsqfBAK3/C9DfcIzgAqfHx8uZ2Puz2Zb3EFh4y1zCNOmfAF512tBXb//bi8AVMpfGtjhaOfZ2byhCrsIi4UE0jpahTZMy0cJmnrSmEW2OOLW/jBpH5Tkyu/WP1kpvD0veUTz8Ufixzz1pMu6J02jvakDCheKcsAsf5yUeemtXwmkr8PnjohXnTWp+L29Zzv3MhTMTwgftT/WJwc0tq+feToA15mtfW6blOCmxgeusvIk3Zhmea0rBlTeyDklWsyUM77lP6xlDicRMJh3Ypw1TIVN+j46fgH4K7tfj0RxMxPLm9PODPIF4o8xWnQXrMQyfv5WdAF2CJPIlhcqQV3USkktm5S5atMEtg2FrGxpQGc1Ei+XWM9E3nzV+Q1hNxwbDvfHVixhCMZ3t/gFMrCNTwVWnkcFe42kRBXsQFLGoztfiTsdqEw/xxp9rDyJtf+Z4D2DjZbJ7qiXMNzHzl/CYSO2LlbqmYdVLdUn+RXcqQB8uvrhMBmYQXyU=
+  file: platforms/android/build/outputs/apk/android-release-unsigned.apk
+  overwrite: true
+  on:
+    repo: openenergymonitor/cydynni-cordova
+    tags: true
+
+# https://docs.travis-ci.com/user/deployment/releases
