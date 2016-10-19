@@ -35,7 +35,9 @@ deploy:
   provider: releases
   api_key:
     secure: BO3M3Nh+dK25oDMW3UuSZ+PRPD7bgbCJxQuzMeAFUk+aWNWbPHuE6n+pCPiooyZh8s+iPVNQfTpt/pyTJj6/nrYlx2YhC18qAqBIAkHWoNMC7Sr/bFgMRBT4U2rpgllqS7y86dGa03848RweBtimaOqkKq5b9MjimJ4DblBb9hd3//sg7TdGsqfBAK3/C9DfcIzgAqfHx8uZ2Puz2Zb3EFh4y1zCNOmfAF512tBXb//bi8AVMpfGtjhaOfZ2byhCrsIi4UE0jpahTZMy0cJmnrSmEW2OOLW/jBpH5Tkyu/WP1kpvD0veUTz8Ufixzz1pMu6J02jvakDCheKcsAsf5yUeemtXwmkr8PnjohXnTWp+L29Zzv3MhTMTwgftT/WJwc0tq+feToA15mtfW6blOCmxgeusvIk3Zhmea0rBlTeyDklWsyUM77lP6xlDicRMJh3Ypw1TIVN+j46fgH4K7tfj0RxMxPLm9PODPIF4o8xWnQXrMQyfv5WdAF2CJPIlhcqQV3USkktm5S5atMEtg2FrGxpQGc1Ei+XWM9E3nzV+Q1hNxwbDvfHVixhCMZ3t/gFMrCNTwVWnkcFe42kRBXsQFLGoztfiTsdqEw/xxp9rDyJtf+Z4D2DjZbJ7qiXMNzHzl/CYSO2LlbqmYdVLdUn+RXcqQB8uvrhMBmYQXyU=
-  file: platforms/android/build/outputs/apk/android-release-unsigned.apk
+  file:
+    - /Users/travis/build/openenergymonitor/cydynni-cordova/platforms/android/build/outputs/apk/android-debug.apk
+    - /Users/travis/build/openenergymonitor/cydynni-cordova/platforms/ios/build/emulator/Cyd\ Ynni.app
   overwrite: true
   on:
     repo: openenergymonitor/cydynni-cordova
