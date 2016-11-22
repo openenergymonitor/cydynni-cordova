@@ -5,6 +5,7 @@ settings.php
 
 # cordova
 platforms/*/
+plugins/*/
 
 # res
 resources/signing
