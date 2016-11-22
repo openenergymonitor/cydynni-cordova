@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1536"
+   height="2048"
+   viewBox="0 0 1536 2048"
+   id="svg3428"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="splash-1536-2048.svg">
+  <defs
+     id="defs3430">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath20">
+      <path
+         d="m 0,420.94 986,0 L 986,0 0,0 0,420.94 Z"
+         id="path22"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="509.23659"
+     inkscape:cy="520"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1027"
+     inkscape:window-height="1896"
+     inkscape:window-x="53"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3433">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,995.63787)">
+    <g
+       transform="matrix(2.7392385,0,0,-2.7392385,117.68035,304.02185)"
+       id="g16">
+      <g
+         id="g18"
+         clip-path="url(#clipPath20)">
+        <g
+           id="g24"
+           transform="translate(233.1143,114.6719)">
+          <path
+             d="m 0,0 c -64.736,12.516 -107.07,75.142 -94.554,139.88 4.655,24.083 16.255,45.056 32.309,61.267 -32.508,-21.204 -54.342,-57.556 -55.257,-99.291 C -118.974,34.683 -65.712,-20.966 1.462,-22.438 43.909,-23.367 81.733,-2.43 104.215,30.05 77.24,4.854 39.012,-7.544 0,0"
+             style="fill:#4bb748;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path26"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g28"
+           transform="translate(292.4038,317.7734)">
+          <path
+             d="m 0,0 c 28.772,-22.296 44.259,-59.576 36.877,-97.757 -10.451,-54.054 -62.741,-89.398 -116.794,-78.949 -4.807,0.929 -9.457,2.202 -13.949,3.766 11.96,-9.27 26.201,-15.966 42.074,-19.037 54.053,-10.447 106.343,24.898 116.793,78.95 C 74.522,-63.78 46.021,-16.01 0,0"
+             style="fill:#28aae2;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path30"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g32"
+           transform="translate(159.7144,210.6836)">
+          <path
+             d="m 0,0 c -4.964,40.77 24.061,77.844 64.83,82.809 40.769,4.963 77.844,-24.057 82.808,-64.83 1.12,-9.189 0.497,-18.189 -1.584,-26.679 7.297,14.33 10.558,30.911 8.467,48.076 -5.594,45.934 -47.365,78.636 -93.298,73.038 C 15.292,106.822 -17.41,65.053 -11.815,19.119 -9.725,1.954 -2.581,-13.36 7.942,-25.521 3.885,-17.778 1.121,-9.192 0,0"
+             style="fill:#fedc00;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path34"
+             inkscape:connector-curvature="0" />
+        </g>
+      </g>
+    </g>
+    <text
+       y="298.41803"
+       x="284.69107"
+       style="font-variant:normal;font-weight:600;font-stretch:normal;font-size:198.64633179px;font-family:'Montserrat Semi Bold';-inkscape-font-specification:Montserrat-SemiBold;writing-mode:lr-tb;fill:#3d6359;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text12">
+      <tspan
+         x="284.69107 411.62613 544.71924 677.81219 737.80341 785.67706 895.3299 957.50604 1076.098 1201.8413"
+         y="298.41803"
+         sodipodi:role="line"
+         id="tspan14">Ynni Lleol</tspan>
+    </text>
+  </g>
+</svg>
