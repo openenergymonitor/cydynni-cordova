@@ -22,6 +22,7 @@ before_install:
 - npm cache clean
 - npm install -g cordova
 - cordova plugins add cordova-plugin-statusbar
+- cordova plugin add cordova-plugin-network-information
 - echo y | android update sdk -u --filter android-23,android-24
 before_script:
 - rm -rf platforms

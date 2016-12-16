@@ -1,27 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Cyd Ynni</title>
 
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script type="text/javascript" charset="utf-8">
+        // Wait for device API libraries to load
+        //
+        function onLoad() {
+            document.addEventListener("deviceready", onDeviceReady, false);
+            document.addEventListener("offline", onOffline, false);
+            document.addEventListener("online", gotNetworkConnection, false);
 
-    // Wait for device API libraries to load
-    //
-    function onLoad() {
-        document.addEventListener("deviceready", onDeviceReady, false);
-    }
 
-    // device APIs are available
-    //
-    function onDeviceReady() {
-        // Now safe to use device APIs
-           window.location="http://cydynni.org.uk/";
-    }
+        }
 
+        // device APIs are available
+        //
+        function onDeviceReady() {
+            // Now safe to use device APIs
+            document.write("loaded")
+            if (navigator.connection.type == Connection.NONE)
+            {
+              onOffline();
+            }
+            else {
+              window.location = "http://cydynni.org.uk/";
+            }
+
+
+        }
+
+        function gotNetworkConnection() {
+            window.location = "http://cydynni.org.uk/";
+
+        }
+
+
+        function onOffline() {
+            // Handle the offline event
+            document.write("Please connect to the internet to load CydYnni data.")
+        }
     </script>
 
-  <body onload="onLoad()">
-    <h1>This application needs an internet connection please connect your device to the internet and try again.</h1>
-  </body>
+    <body onload="onLoad()">
+      loading ...
+    </body>
+
 </html>
