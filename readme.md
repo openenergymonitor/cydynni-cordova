@@ -16,6 +16,13 @@ Add path to Android SDK variable
 
 `echo 'export ANDROID_HOME=~/Android/Sdk' >> ~/.bashrc`
 
+Install Cordova plugins
+
+```
+$ cordova plugins add cordova-plugin-statusbar
+$ cordova plugin add cordova-plugin-network-information
+```
+
 ## Android Build
 
 cd cydynni-cordova
