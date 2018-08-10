@@ -10,28 +10,33 @@ Thanks to @davehun
 
 ### Install Cordova
 
-`sudo npm install cordova -g`
+`$ sudo npm install cordova -g`
 
 Add path to Android SDK variable
 
-`echo 'export ANDROID_HOME=~/Android/Sdk' >> ~/.bashrc`
+`$ echo 'export ANDROID_HOME=~/Android/Sdk' >> ~/.bashrc`
 
-Install Cordova plugins
+### Clone Project
+
+`$ git clone https://github.com/openenergymonitor/cydynni-cordova`
+
+### Install Cordova plugins
 
 ```
+$ cd cydynni-cordova
 $ cordova plugins add cordova-plugin-statusbar
 $ cordova plugin add cordova-plugin-network-information
 ```
 
 ## Android Build
 
-cd cydynni-cordova
+`$ cd cydynni-cordova`
 
 If exisits remove platforms folder to start a fresh build
 
-`rm -rf platforms`
+`$ rm -rf platforms`  
 
-### Debug apk
+### Generate Debug apk
 
 ```
 cordova prepare
@@ -41,13 +46,13 @@ cordova build android
 ### Release apk
 
 ```
-cordova prepare
-cordova build android --release
+$ cordova prepare
+$ cordova build android --release
 ```
 
 ### Sign APK
 
-`jarsigner -verbose -keystore android.jks platforms/android/build/outputs/apk/android-release-unsigned.apk "cyd ynni hydro"`
+`$ jarsigner -verbose -keystore android.jks platforms/android/build/outputs/apk/android-release-unsigned.apk "cyd ynni hydro"`
 
 Where android.jks is our signing key
 
