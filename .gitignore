@@ -4,8 +4,10 @@ settings.php
 .DS_Store
 
 # cordova
+platforms
 platforms/*/
 plugins/*/
 
 # res
 resources/signing
+
