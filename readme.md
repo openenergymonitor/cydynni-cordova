@@ -12,9 +12,17 @@ Thanks to @davehun
 
 `$ sudo npm install cordova -g`
 
+## Link to Android Studio
+
+Ensure Android Studio is installed with the SDK for the required version of Android downloaded
+
 Add path to Android SDK variable
 
 `$ echo 'export ANDROID_HOME=~/Android/Sdk' >> ~/.bashrc`
+
+## Install Gradle 
+
+sudo apt-get install gradle
 
 ### Clone Project
 
